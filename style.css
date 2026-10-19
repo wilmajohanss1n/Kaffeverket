@@ -11,3 +11,40 @@ body{
 img{
     max-width:100%;
 }
+
+/* Sidhuvud */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kaffeverkets logotyp */
+.logo{
+    color: #52372D;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Menyknappen */
+.meny-toggle {
+    background:none;
+    border:none;
+    color:#52372D;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/*Navigeringslänkar */
+.nav-menu {
+    display:none;
+}
+
+/* När mobilmenyn öppnas */
+.nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
