@@ -125,3 +125,20 @@ margin-bottom: 10px;
     border-radius: 12px;
     clip-path: inset(0 0 0 3px round 12px);
 }
+
+/* Presentation om Kaffeverket */
+.features {
+    text-align:  center;
+    padding: 30px 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.features h2 {
+    margin-bottom: 10px;
+}
+
+.features p {
+    line-height: 1.5;
+}
+
