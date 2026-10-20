@@ -142,3 +142,24 @@ margin-bottom: 10px;
     line-height: 1.5;
 }
 
+.introduction {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.introduction img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 12px;
+}
+
+/* Sidfot */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 1px solid black;
+    font-size: 22px;
+    font-weight: bold;
+}
