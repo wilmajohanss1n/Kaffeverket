@@ -26,10 +26,20 @@ contactForm.addEventListener("submit", function (event) {
     const message = document.querySelector("#message").value.trim();
 
     // Kontrollerar om något fält är tomt
-    if (name === "" || email === "" || message === "") {
-        formFeedback.textContent = "Fyll i alla fält innan du skickar formuläret.";
-        return;
-    }
+   if (name === "") {
+formFeedback.textContent = "Du måste fylla i ditt namn.";
+return;
+}
+
+if (email === "") {
+formFeedback.textContent = "Du måste fylla i din e-postadress.";
+return;
+}
+
+if (message === "") {
+formFeedback.textContent = "Du måste skriva ett meddelande.";
+return;
+}
 
     // Kontrollerar att e-postadressen har rätt format
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -44,7 +54,6 @@ contactForm.addEventListener("submit", function (event) {
     contactForm.reset();
 });
 }
-
 
 
 
