@@ -14,6 +14,7 @@ const contactForm = document.querySelector(".contact-form");
 const formFeedback = document.querySelector(".form-feedback");
 
 // Hanterar när användaren försöker skicka formuläret
+if (contactForm) {
 contactForm.addEventListener("submit", function (event) {
 
     // Förhindrar att sidan laddas om automatiskt
@@ -40,11 +41,9 @@ contactForm.addEventListener("submit", function (event) {
 
     // Visar ett medelande när alla fält är korrekt ifyllda
     formFeedback.textContent = "Tack för ditt meddelande! Formuläret är korrekt ifyllt.";
-
-
-
-
+    contactForm.reset();
 });
+}
 
 
 
