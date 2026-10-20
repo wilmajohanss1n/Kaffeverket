@@ -48,7 +48,7 @@
         <section class="contact-form-section">
             <h2>Skicka ett meddelande</h2>
 
-            <form class="contact-form">
+            <form class="contact-form" novalidate>
                 <label for="name">Namn:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -59,6 +59,7 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Skicka</button>
+                <p class="form-feedback" aria-live="polite"></p>
             </form>
         </section>
     </main>
