@@ -26,19 +26,24 @@ contactForm.addEventListener("submit", function (event) {
     const message = document.querySelector("#message").value.trim();
 
     // Kontrollerar om något fält är tomt
+    const errors = [];
    if (name === "") {
-formFeedback.textContent = "Du måste fylla i ditt namn.";
-return;
+    errors.push ("Du måste fylla i ditt namn.");
 }
 
 if (email === "") {
-formFeedback.textContent = "Du måste fylla i din e-postadress.";
-return;
+errors.push ("Du måste fylla i din e-postadress.");
 }
 
 if (message === "") {
-formFeedback.textContent = "Du måste skriva ett meddelande.";
-return;
+errors.push("Du måste skriva ett meddelande.");
+}
+
+if (errors.length > 0) {
+    formFeedback.innerHTML = errors
+    .map(error => `<p>${error}</p>`)
+    .join("");
+    return;
 }
 
     // Kontrollerar att e-postadressen har rätt format
