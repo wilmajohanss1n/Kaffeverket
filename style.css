@@ -342,6 +342,17 @@ main > p {
         order: -1;
     }
 
+    /* Detta erbjuder Kaffeverket */
+    .features {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .features > * {
+        flex: 1;
+    }
+
 
 }
 
