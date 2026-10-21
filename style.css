@@ -370,7 +370,48 @@ main > p {
     flex: 1;
    }
 
+  /* Menyn */
+  .menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+  }
 
+  .menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+    .menu-section h2 {
+        
+        width: 100%;
+    }
+
+
+    /* Kontaktuppgifter och öppetider */
+    .contact-info {
+        text-align: left;
+    }
+
+    .opening-hours {
+        text-align: left;
+    }
+  
+    /* Kontaktformulär */
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    
 }
 
 
