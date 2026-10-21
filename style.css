@@ -353,6 +353,23 @@ main > p {
         flex: 1;
     }
 
+   /* Din nya favoritplats för en fika paus */
+   .introduction {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+   }
+
+   .introduction img {
+    width: 45%;
+    height: auto;
+   }
+
+   .introduction h2, .introduction p {
+    flex: 1;
+   }
+
 
 }
 
