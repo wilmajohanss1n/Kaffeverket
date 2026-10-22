@@ -39,20 +39,20 @@ if (message === "") {
 errors.push("Du måste skriva ett meddelande.");
 }
 
+  // Kontrollerar att e-postadressen har rätt format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email !== "" && !emailPattern.test(email)) {
+    errors.push("Skriv in en giltig e-postadress.");
+    }
+
+
 if (errors.length > 0) {
     formFeedback.innerHTML = errors
     .map(error => `<p>${error}</p>`)
     .join("");
     return;
 }
-
-    // Kontrollerar att e-postadressen har rätt format
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailPattern.test(email)) {
-    formFeedback.textContent = "Skriv in en giltig e-postadress.";
-    return;
-    }
 
     // Visar ett medelande när alla fält är korrekt ifyllda
     formFeedback.textContent = "Tack för ditt meddelande! Formuläret är korrekt ifyllt.";
